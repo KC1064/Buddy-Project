@@ -1,2 +1,2 @@
 # Buddy-Project
-A project to continue our friendship.
+A project to continue your friendship.
