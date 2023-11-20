@@ -32,8 +32,8 @@ function checkAvailability() {
         ["0", "0", "1", "1", "0", "1", "1", "1"]
     ];
 
-    let m = -1; // Row index (initialize to an invalid value)
-    let n = -1; // Column index (initialize to an invalid value)
+    let m = -1; 
+    let n = -1; 
 
     switch (dayInput) {
         case "monday":
@@ -93,14 +93,14 @@ function checkAvailability() {
     let resultMessage = "";
 
     if (temp1 === 1) {
-        resultMessage += "Sai & Jyoti are free\n";
+        resultMessage += "Sai Jyoti ";
     }
     if (temp2 === 1) {
-        resultMessage += "Kiron & Mrinal are free\n";
+        resultMessage += "Kiron Mrinal ";
     }
     if (temp3 === 1) {
-        resultMessage += "Sukanya & Manab are free";
+        resultMessage += "Sukanya Manab ";
     }
 
-    document.getElementById("result").innerText = resultMessage || "Everyone is busy";
+    document.getElementById("result").innerHTML = "<h5 class='result-title'>RESULT:</h5><p class='result'>" + resultMessage + "</p>";
 }

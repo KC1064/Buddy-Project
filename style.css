@@ -3,15 +3,114 @@
     margin: 0;
 }
 
-.container {
-    background: aqua;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+body {
+    background-color: blue;
 }
-.day{
-    width: 100px;
-    height: 50px;
+
+header{
+    background-color: aquamarine;
+    text-align: center;
+    height:10vh;
+    font-size: 2.5rem;
+}
+
+header h3 {
+    color: blueviolet;
+    font-weight: 100; 
+    font-family: 'Vina Sans', sans-serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container {
+    border-radius: 40px;
+    background-color: antiquewhite;
+    width: 450px;
+    height: 500px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.day {
+    margin-left: 50px;
+    margin-bottom: 25px;
+    /* background-color: aquamarine; */
+    font-size: 18px;
+    
+}
+
+#day {
+    border: none;
+    /* background-color: blueviolet; */
+    width: 229px;
+    height: 28px;
+}
+
+.time {
+    margin-left:96px;
+    margin-bottom: 25px;
+    /* background-color: aquamarine; */
+    font-size: 18px;
+}
+
+#time {
+    border: none;
+    /* background-color: blueviolet; */
+    width: 200px;
+    height: 30px;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 20px;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border: solid black 2px;
+}
+
+.result {
+    margin-top: 15px;
+    /* margin-bottom: 20px; */
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    background-color: burlywood;
+    margin-left: 53px;
+    line-height: 30px;
+    border-radius: 60px;
+}
+
+.result-title {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 29px;
+}
+
+.result p {
+    padding: 2px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+
+.btn:hover {
+    background-color: green;
 }
