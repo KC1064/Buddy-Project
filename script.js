@@ -22,7 +22,7 @@ function checkAvailability() {
         ["0", "1", "1", "1", "0", "1", "1", "0"],
         ["1", "1", "1", "1", "0", "1", "0", "0"],
         ["1", "1", "1", "1", "0", "1", "1", "1"],
-        ["1", "1", "0", "1", "0", "0", "1", "1"]
+        ["1", "1", "1", "1", "0", "1", "0", "0"]
     ];
     const sukanyaManab = [
         ["0", "0", "1", "1", "0", "1", "1", "0"],
@@ -114,7 +114,7 @@ function checkAvailability() {
     const temp5 = findConsultancy(ayush, n, m);
     const temp6 = findConsultancy(ankit, n, m);
 
-    let resultMessage = "";
+    let resultMessage = "<p class='result'>";
 
     if (temp1 === 1) {
         resultMessage += "Sai Jyoti ";
@@ -135,5 +135,7 @@ function checkAvailability() {
         resultMessage += " Ankit ";
     }
 
-    document.getElementById("result").innerHTML = "<h5 class='result-title'>RESULT:</h5><p class='result'>" + resultMessage + "</p>";
+    resultMessage += "</p>";
+
+    document.getElementById("result").innerHTML = "<h5 class='result-title'>Result:</h5>" + resultMessage;
 }

@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Disturb Your Friend's Peace</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,22 +21,22 @@
     <section>
         <div class="container">
             <h3 class="title">Connect With Your Friends🫂</h3>
-            <p class="text">Enter Day and Time to find who are free</p>
+            <p class="text" font-family: style="font-family: 'Comic Neue', cursive;">Enter Day and Time to find who are free</p>
             <div class="day">
-                <label class="day"> Day: </label>
+                <label class="day"></label>
                 <select id="day">
-                    <option value="">----------------Select Day----------------</option>
+                    <option value="">Choose Day</option>
                     <option value="monday">Monday</option>
                     <option value="tuesday">Tuesday</option>
                     <option value="wednesday">Wednesday</option>
                     <option value="thursday">Thursday</option>
                     <option value="friday">Friday</option>
                 </select>
-            </div>
+            </div> 
             <div class="time">
-                <label for="time">Timeslot:</label>
+                <label for="time"></label>
                 <select id="time">
-                    <option value="">---------Select Timeslot----------</option>
+                    <option value="">Choose Timeslot</option>
                     <option value="8:00-8:55">8:00-8:55</option>
                     <option value="8:55-9:50">8:55-9:50</option>
                     <option value="9:50-10:45">9:50-10:45</option>
@@ -44,13 +48,15 @@
                 </select>
             </div>
             <button onclick="checkAvailability()" class="btn">Check Availability</button>
-            <div id="result">
-                <h5 class="result-title">RESULT:</h5>
-                <p class="result" style="font-size: 17px; display: flex; justify-content: center; text-align: center;"></p>
+            <div id="result" class="result">
+                <h5 class="result-title">Results</h5>
+                <p class="result" style="font-size: 1.2rem; text-align: center; font-weight: 800;"></p>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
-
+    <footer>
+        <div class="icon">©</div><a href="https://github.com/KC1064" class="git-link">Kironmay Mishra</a>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
