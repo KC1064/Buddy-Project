@@ -90,7 +90,10 @@ section {
     /* margin-bottom: 20px; */
     width: 350px;
     height: 60px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
     background-color: burlywood;
     margin-left: 53px;
     line-height: 30px;
@@ -105,9 +108,9 @@ section {
 }
 
 .result p {
-    padding: 2px;
-    font-size: 15px;
-    margin-top: 8px;
+    padding: 10px;
+    font-size: 25px;
+
 }
 
 

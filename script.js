@@ -15,7 +15,7 @@ function checkAvailability() {
         ["1", "1", "1", "0", "1", "1", "0", "0"],
         ["0", "1", "1", "0", "0", "1", "1", "1"],
         ["1", "1", "1", "0", "1", "0", "1", "1"],
-        ["1", "1", "1", "1", "0", "0", "1", "0"]
+        ["1", "1", "1", "1", "0", "1", "0", "0"]
     ];
     const kironMrinal = [
         ["1", "1", "1", "1", "0", "1", "0", "0"],
@@ -30,6 +30,27 @@ function checkAvailability() {
         ["1", "1", "1", "0", "1", "1", "1", "0"],
         ["1", "1", "1", "0", "1", "1", "0", "0"],
         ["0", "0", "1", "1", "0", "1", "1", "1"]
+    ];
+    const ayush = [
+        ["0", "0", "1", "1", "0", "1", "0", "0"],
+        ["0", "1", "1", "1", "0", "1", "1", "1"],
+        ["0", "1", "0", "0", "1", "1", "1", "1"],
+        ["1", "1", "1", "0", "1", "1", "1", "1"],
+        ["0", "1", "1", "1", "0", "1", "1", "1"]
+    ];
+    const ankit= [
+        ["0", "1", "1", "0", "1", "0", "1", "1"],
+        ["1", "1", "1", "1", "0", "1", "1", "0"],
+        ["0", "0", "1", "1", "0", "1", "1", "1"],
+        ["1", "1", "0", "0", "1", "1", "1", "0"],
+        ["0", "1", "0", "1", "0", "0", "1", "1"]
+    ];
+    const arpita= [
+        ["1", "1", "1", "1", "0", "1", "1", "0"],
+        ["1", "1", "1", "0", "1", "1", "0", "0"],
+        ["0", "1", "1", "1", "0", "1", "1", "1"],
+        ["0", "1", "1", "1", "0", "1", "0", "0"],
+        ["0", "1", "1", "1", "0", "1", "1", "1"]
     ];
 
     let m = -1; 
@@ -89,6 +110,9 @@ function checkAvailability() {
     const temp1 = findConsultancy(saiJyoti, n, m);
     const temp2 = findConsultancy(kironMrinal, n, m);
     const temp3 = findConsultancy(sukanyaManab, n, m);
+    const temp4 = findConsultancy(arpita, n, m);
+    const temp5 = findConsultancy(ayush, n, m);
+    const temp6 = findConsultancy(ankit, n, m);
 
     let resultMessage = "";
 
@@ -100,6 +124,15 @@ function checkAvailability() {
     }
     if (temp3 === 1) {
         resultMessage += "Sukanya Manab ";
+    }
+    if (temp4 === 1) {
+        resultMessage += " Arpita ";
+    }
+    if (temp5 === 1) {
+        resultMessage += " Ayush ";
+    }
+    if (temp6 === 1) {
+        resultMessage += " Ankit ";
     }
 
     document.getElementById("result").innerHTML = "<h5 class='result-title'>RESULT:</h5><p class='result'>" + resultMessage + "</p>";
